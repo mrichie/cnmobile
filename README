@@ -1,13 +1,18 @@
 Cnmobile
 ========
 
-Introduction goes here.
+Used for Rails 3.0.x.
+
+示例：
+ class ApplicationController < ActionController::Base
+   include Cnmobile::ViewSelector
+ end
+
+手机访问时，按如下方式查找template
+*index_mobile.html.erb
+
+*index.html.erb
 
 
-Example
-=======
 
-Example goes here.
-
-
-Copyright (c) 2012 [name of plugin creator], released under the MIT license
+Copyright (c) 2012 [richie], released under the MIT license
