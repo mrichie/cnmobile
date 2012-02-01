@@ -1,0 +1,19 @@
+Cnmobile
+========
+
+Used for Rails 3.0.x.
+
+示例：
+
+  class ApplicationController < ActionController::Base
+    include Cnmobile::ViewSelector
+  end
+
+手机访问时，按如下方式查找template
+* index_mobile.html.erb
+
+* index.html.erb
+
+
+
+Copyright (c) 2012 [richie], released under the MIT license
