@@ -12,7 +12,7 @@ module Cnmobile
         before_filter :register_mobile
 
         self._view_paths = self._view_paths.dup
-        self.view_paths.unshift(Cnmobile::Resolver.new(File.join(Rails.root, "app/views")))
+        self.view_paths.unshift(*self.view_paths.map {|resolver| Cnmobile::Resolver.new(resolver.to_path) })
       end
     end
 
